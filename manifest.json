@@ -1,0 +1,17 @@
+{
+  "short_name": "العيادة الشمولية",
+  "name": "نظام التشخيص الشمولي الموسع 2026",
+  "icons": [
+    {
+      "src": "ihsan_hamdan_exclusive_icon_1772230449625.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#000810",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#d4af37",
+  "description": "نظام تشخيص طبي شمولي متقدم يعتمد على موازنة الأخلاط والأنسجة وأنظمة الجسم."
+}
