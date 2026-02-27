@@ -115,7 +115,27 @@
                 </div>
                 <div class="nav-item" onclick="showStep(10)" data-step="10"><i class="fas fa-brain"></i> النفس والروح
                 </div>
-                <div class="nav-item" onclick="showStep(11)" data-step="11" style="background: rgba(212,175,55,0.1);"><i
+                <div class="nav-item" onclick="showStep(11)" data-step="11"><i class="fas fa-utensils"></i> الجهاز
+                    الهضمي</div>
+                <div class="nav-item" onclick="showStep(12)" data-step="12"><i class="fas fa-lungs"></i> الجهاز التنفسي
+                </div>
+                <div class="nav-item" onclick="showStep(13)" data-step="13"><i class="fas fa-heart-pulse"></i> الجهاز
+                    الدموي</div>
+                <div class="nav-item" onclick="showStep(14)" data-step="14"><i class="fas fa-dumbbell"></i> الجهاز
+                    العضلي</div>
+                <div class="nav-item" onclick="showStep(15)" data-step="15"><i class="fas fa-circle-nodes"></i> الغدة
+                    الدرقية</div>
+                <div class="nav-item" onclick="showStep(16)" data-step="16"><i class="fas fa-venus"></i> فحص النساء
+                </div>
+                <div class="nav-item" onclick="showStep(17)" data-step="17"><i class="fas fa-mars"></i> فحص الرجال</div>
+                <div class="nav-item" onclick="showStep(18)" data-step="18"><i class="fas fa-flask-vial"></i> الغدد
+                    والهرمونات</div>
+                <div class="nav-item" onclick="showStep(19)" data-step="19"><i class="fas fa-droplet-slash"></i>
+                    البرولاكتين</div>
+                <div class="nav-item" onclick="showStep(20)" data-step="20"><i class="fas fa-bandage"></i> الجلطات</div>
+                <div class="nav-item" onclick="showStep(21)" data-step="21"><i class="fas fa-stethoscope"></i> فحص سريري
+                    شامل</div>
+                <div class="nav-item" onclick="showStep(22)" data-step="22" style="background: rgba(212,175,55,0.1);"><i
                         class="fas fa-star"></i> مصدر العلة</div>
                 <div id="nav-archive" class="nav-item" onclick="openArchive()"
                     style="display: none; border-top: 1px solid rgba(212,175,55,0.3); margin-top: 15px; color: var(--gold); background: rgba(0,0,0,0.3);">
@@ -848,8 +868,232 @@
                     </div>
                 </section>
 
-                <!-- Step 11: Final Source of Ailment (Asl Al-Ella) -->
+                <!-- Step 11: Digestive System (Clinical) -->
                 <section class="diag-section" id="step-11">
+                    <h2 class="section-title"><i class="fas fa-utensils"></i> الجهاز الهضمي والتمثيل</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> عسر هضم
+                            وتخمر (أخلاط نيئة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> غازات
+                            وانتفاخات (رياح غليظة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> إمساك
+                            مزمن (يبوسة معوية)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> إسهال
+                            متكرر (برودة/رطوبة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> حموضة
+                            وحرقان (حدة صفراوية)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> آلام في
+                            فم المعدة</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> قولون
+                            عصبي وشد بطني</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateDigestiveAnalysis()"> طعم مر في
+                            الفم (هيجان الصفراء)</label>
+                    </div>
+                </section>
+
+                <!-- Step 12: Respiratory System (Clinical) -->
+                <section class="diag-section" id="step-12">
+                    <h2 class="section-title"><i class="fas fa-lungs"></i> الجهاز التنفسي (الترويح)</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> ضيق
+                            تنفس (ربو/حساسية)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> سعال
+                            جاف (يبوسة الرئة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> سعال
+                            بلغمي (رطوبة باردة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> تحسس
+                            وضيق عند الغبار أو الروائح</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> آلام في
+                            الصدر عند التنفس العميق</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> التهاب
+                            جيوب أنفية مزمن</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateRespiratoryAnalysis()"> شخير
+                            واختناق أثناء النوم</label>
+                    </div>
+                </section>
+
+                <!-- Step 13: Circulatory System (Clinical) -->
+                <section class="diag-section" id="step-13">
+                    <h2 class="section-title"><i class="fas fa-heart-pulse"></i> الجهاز الدموي والوعائي</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> خفقان
+                            وتسارع ضربات القلب</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> ضغط دم
+                            مرتفع (امتلاء)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> ضغط دم
+                            منخفض (ضعف القوة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> برودة
+                            شديدة في الأطراف</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> دوخة
+                            ودوار عند تغيير الوضعية</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> تورم
+                            القدمين (احتباس دموي)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateCirculatoryAnalysis()"> ظهور
+                            دوالي الساقين (ركود سوداوي)</label>
+                    </div>
+                </section>
+
+                <!-- Step 14: Muscular System (Clinical) -->
+                <section class="diag-section" id="step-14">
+                    <h2 class="section-title"><i class="fas fa-dumbbell"></i> الجهاز العضلي والحركي</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> تشنجات
+                            عضلية متكررة (شد عضلي)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> وهن وضعف
+                            في الكتلة العضلية</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> آلام ليفية
+                            منتشرة (فيبروميالغيا)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> ارتعاش لا
+                            إرادي في الألياف العضلية</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> صعوبة في
+                            صعود الدرج أو المشي</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMuscularAnalysis()"> ثقل عام في
+                            العظام والمفاصل</label>
+                    </div>
+                </section>
+
+                <!-- Step 15: Thyroid Gland (Detailed) -->
+                <section class="diag-section" id="step-15">
+                    <h2 class="section-title"><i class="fas fa-circle-nodes"></i> استقصاء الغدة الدرقية</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> خمول ونعاس
+                            مفرط (خمول الغدة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> زيادة وزن
+                            غير مبررة</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> نقص وزن
+                            مفاجئ وجحوظ عينين</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> تساقط شعر
+                            وتقصف الأظافر</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> جفاف شديد
+                            في الجلد</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> عصبية وقلق
+                            مفرط (نشاط الغدة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> عدم تحمل
+                            البرودة نهائياً</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateThyroidAnalysis()"> عدم تحمل
+                            الحرارة والتعرق المفرط</label>
+                    </div>
+                </section>
+
+                <!-- Step 16: Women's Health (OBGYN) -->
+                <section class="diag-section" id="step-16">
+                    <h2 class="section-title"><i class="fas fa-venus"></i> فحص استقصاء النساء (الدورة والثدي)</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> اضطراب أو
+                            انقطاع في الدورة الشهرية</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> آلام حادة
+                            وتشنجات رحمية شديدة</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> نزيف دموي
+                            غزير ومستمر</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> وجود كتل أو
+                            تحجر في الثدي</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> وخز وأوجاع في
+                            الثدي قبل الدورة</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> إفرازات
+                            مهبلية غير طبيعية (رطوبة فاسدة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateWomenAnalysis()"> تكيس المبايض
+                            (ترسب بلغمي/سوداوي)</label>
+                    </div>
+                </section>
+
+                <!-- Step 17: Men's Health -->
+                <section class="diag-section" id="step-17">
+                    <h2 class="section-title"><i class="fas fa-mars"></i> فحص استقصاء الرجال</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateMenAnalysis()"> ضعف طاقة عام
+                            وإجهاد حاد</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMenAnalysis()"> أعراض تضخم
+                            البروستاتا (صعوبة تبول)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMenAnalysis()"> آلام في أسفل
+                            الحوض والخصيتين</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMenAnalysis()"> تكرار التبول
+                            الليلي (برودة المثانة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateMenAnalysis()"> ضعف الرغبة
+                            الكلية (نقص الحرارة الغريزية)</label>
+                    </div>
+                </section>
+
+                <!-- Step 18: Endocrine & Hormones -->
+                <section class="diag-section" id="step-18">
+                    <h2 class="section-title"><i class="fas fa-flask-vial"></i> الغدد الصماء والهرمونات</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> كثرة
+                            التبول مع عطش دائم (مؤشر سكري)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> هبات
+                            ساخنة مفاجئة (اضطراب هرموني)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> اضطرابات
+                            نوم عميقة وأرق هرموني</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> تعرق ليلي
+                            غزير ومستمر</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> ظهور شعر
+                            غير مرغوب فيه (عند النساء)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateEndocrineAnalysis()"> تصبغات
+                            جلدية في الرقبة أو الثنيات</label>
+                    </div>
+                </section>
+
+                <!-- Step 19: Prolactin (Hormone) -->
+                <section class="diag-section" id="step-19">
+                    <h2 class="section-title"><i class="fas fa-droplet-slash"></i> استقصاء هرمون الحليب (البرولاكتين)
+                    </h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateProlactinAnalysis()"> إفرازات
+                            من الحلمتين (بدون رضاعة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateProlactinAnalysis()"> صداع شديد
+                            في مقدمة الرأس (الغدة النخامية)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateProlactinAnalysis()"> اضطراب في
+                            الرؤية أو المجال البصري</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateProlactinAnalysis()"> تأخر
+                            الحمل بدون سبب عضلي واضح</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateProlactinAnalysis()"> انخفاض
+                            ملحوظ في كثافة العظام</label>
+                    </div>
+                </section>
+
+                <!-- Step 20: Blood Clots & Thrombosis -->
+                <section class="diag-section" id="step-20">
+                    <h2 class="section-title"><i class="fas fa-bandage"></i> تقييم مخاطر الجلطات (الركود الدموي)</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> ألم مفاجئ
+                            وشديد في عضلة الساق</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> تورم واحمرار
+                            وسخونة في جهة واحدة من الساق</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> ضيق تنفس
+                            مفاجئ وغير مفسر</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> آلام حادة في
+                            الصدر تزداد مع التنفس</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> تنميل ثقيل في
+                            جهة واحدة من الوجه أو الجسم</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateClotsAnalysis()"> تاريخ عائلي
+                            سابق لجلطات الأوردة</label>
+                    </div>
+                </section>
+
+                <!-- Step 21: Full Systemic Clinical Exam -->
+                <section class="diag-section" id="step-21">
+                    <h2 class="section-title"><i class="fas fa-stethoscope"></i> الفحص السريري الشامل (المشاهدة)</h2>
+                    <div class="traits-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> شحوب شديد في
+                            الوجه (فقر دم/برودة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> اصفرار في بياض
+                            العينين</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> هالات سوداء
+                            عميقة تحت العينين (إجهاد كلى)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> جفاف وتشقق في
+                            زوايا الشفاه</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> رائحة فم كريهة
+                            (رطوبة معدية فاسدة)</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> تضخم واضح في
+                            العقد الليمفاوية</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> برودة أو تعرق
+                            مفرط في راحة اليدين</label>
+                        <label class="trait-item"><input type="checkbox" onchange="updateExamAnalysis()"> مشاكل في
+                            التوازن أو المشية</label>
+                    </div>
+                </section>
+
+                <!-- Step 22: Final Source of Ailment (Asl Al-Ella) -->
+                <section class="diag-section" id="step-22">
                     <h2 class="section-title" style="color: #fff;"><i class="fas fa-award"></i> ميزان الحقيقة (مصدر
                         العلة النهائي)</h2>
                     <p style="color: #aaa; margin-bottom: 25px;">هنا يجتمع العلم الغزي بالاستدلال القلبي؛ لتحديد "العروة
@@ -984,7 +1228,18 @@
                 { id: 'pb-analysis-box', title: 'دلالات النبض والقارورة', color: '#ff6666' },
                 { id: 'env-analysis-box', title: 'العوامل البيئية والزمانية', color: '#ff9933' },
                 { id: 'tc-analysis-box', title: 'دلالات الطعوم والألوان', color: '#9b59b6' },
-                { id: 'ps-analysis-box', title: 'الحالة النفسية والروحية', color: '#e056fd' }
+                { id: 'ps-analysis-box', title: 'الحالة النفسية والروحية', color: '#e056fd' },
+                { id: 'step-11', title: 'الجهاز الهضمي', color: '#fdd835' },
+                { id: 'step-12', title: 'الجهاز التنفسي', color: '#4fc3f7' },
+                { id: 'step-13', title: 'الجهاز الدموي', color: '#ff5252' },
+                { id: 'step-14', title: 'الجهاز العضلي', color: '#ff8a65' },
+                { id: 'step-15', title: 'الغدة الدرقية', color: '#81c784' },
+                { id: 'step-16', title: 'فحص النساء', color: '#f06292' },
+                { id: 'step-17', title: 'فحص الرجال', color: '#64b5f6' },
+                { id: 'step-18', title: 'الغدد والهرمونات', color: '#ba68c8' },
+                { id: 'step-19', title: 'البرولاكتين', color: '#4db6ac' },
+                { id: 'step-20', title: 'الجلطات', color: '#ef5350' },
+                { id: 'step-21', title: 'الفحص السريري الشامل', color: '#90a4ae' }
             ];
 
             let hasData = false;
@@ -1000,6 +1255,17 @@
                         div.style.cssText = `background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; border-right: 4px solid ${src.color};`;
                         div.innerHTML = `<h5 style="color:${src.color}; margin-bottom:8px;"><i class="fas fa-circle-check"></i> ${src.title}:</h5><div style="font-size:0.85rem; opacity:0.9;">${contentDiv.innerHTML}</div>`;
                         summaryList.appendChild(div);
+                    } else if (box && box.classList.contains('diag-section')) {
+                        // Handle systematic check sections
+                        const checkedItems = extractCheckedItems(src.id);
+                        if (checkedItems) {
+                            hasData = true;
+                            const div = document.createElement('div');
+                            div.className = 'evidence-block';
+                            div.style.cssText = `background: rgba(255,255,255,0.05); padding: 15px; border-radius: 12px; border-right: 4px solid ${src.color};`;
+                            div.innerHTML = `<h5 style="color:${src.color}; margin-bottom:8px;"><i class="fas fa-circle-check"></i> ${src.title}:</h5><div style="font-size:0.85rem; opacity:0.9;">${checkedItems}</div>`;
+                            summaryList.appendChild(div);
+                        }
                     }
                 }
             });
@@ -1118,7 +1384,7 @@
 
         function changeStep(n) {
             let next = currentStep + n;
-            if (next >= 1 && next <= 11) {
+            if (next >= 1 && next <= 22) {
                 showStep(next);
             }
         }
@@ -1126,7 +1392,7 @@
         function updateButtons() {
             document.getElementById('prevBtn').style.visibility = (currentStep === 1) ? 'hidden' : 'visible';
             const nextBtn = document.getElementById('nextBtn');
-            if (currentStep === 11) {
+            if (currentStep === 22) {
                 nextBtn.innerHTML = 'إرسال التقرير النهائي <i class="fas fa-paper-plane"></i>';
             } else {
                 nextBtn.innerHTML = 'التالي <i class="fas fa-arrow-left"></i>';
@@ -1431,6 +1697,27 @@
                 box.style.display = 'none';
             }
         }
+
+        function extractCheckedItems(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (!section) return "";
+            const checks = section.querySelectorAll('input[type="checkbox"]:checked');
+            if (checks.length === 0) return "";
+            return Array.from(checks).map(c => c.parentElement.innerText.trim()).join('، ');
+        }
+
+        // Placeholder update functions for new systemic sections
+        function updateDigestiveAnalysis() { }
+        function updateRespiratoryAnalysis() { }
+        function updateCirculatoryAnalysis() { }
+        function updateMuscularAnalysis() { }
+        function updateThyroidAnalysis() { }
+        function updateWomenAnalysis() { }
+        function updateMenAnalysis() { }
+        function updateEndocrineAnalysis() { }
+        function updateProlactinAnalysis() { }
+        function updateClotsAnalysis() { }
+        function updateExamAnalysis() { }
 
         function selectCard(card, type) {
             // Unselect others in group
@@ -1912,6 +2199,17 @@
                 nav_time: "الزمان والمكان",
                 nav_taste: "الطعوم والألوان",
                 nav_psycho: "النفس والروح",
+                nav_digestive: "الجهاز الهضمي",
+                nav_respiratory: "الجهاز التنفسي",
+                nav_circulatory: "الجهاز الدموي",
+                nav_muscular: "الجهاز العضلي",
+                nav_thyroid: "الغدة الدرقية",
+                nav_women: "فحص النساء",
+                nav_men: "فحص الرجال",
+                nav_endocrine: "الغدد والهرمونات",
+                nav_prolactin: "البرولاكتين",
+                nav_clots: "الجلطات",
+                nav_exam: "فحص سريري شامل",
                 nav_asl: "مصدر العلة",
                 nav_archive: "مركز الأرشيف المنظم",
                 btn_prev: "السابق",
@@ -1940,6 +2238,17 @@
                 nav_time: "Time & Space",
                 nav_taste: "Tastes & Colors",
                 nav_psycho: "Mind & Soul",
+                nav_digestive: "Digestive System",
+                nav_respiratory: "Respiratory System",
+                nav_circulatory: "Circulatory System",
+                nav_muscular: "Muscular System",
+                nav_thyroid: "Thyroid Gland",
+                nav_women: "Women's Health",
+                nav_men: "Men's Health",
+                nav_endocrine: "Hormones",
+                nav_prolactin: "Prolactin",
+                nav_clots: "Blood Clots",
+                nav_exam: "Full Clinical Exam",
                 nav_asl: "Source of Ailment",
                 nav_archive: "Organized Archive",
                 btn_prev: "Previous",
@@ -1968,6 +2277,17 @@
                 nav_time: "Temps & Espace",
                 nav_taste: "Goûts & Couleurs",
                 nav_psycho: "Âme & Esprit",
+                nav_digestive: "Système Digestif",
+                nav_respiratory: "Système Respiratoire",
+                nav_circulatory: "Système Circulatoire",
+                nav_muscular: "Système Musculaire",
+                nav_thyroid: "Glande Thyroïde",
+                nav_women: "Santé des Femmes",
+                nav_men: "Santé des Hommes",
+                nav_endocrine: "Hormones",
+                nav_prolactin: "Prolactine",
+                nav_clots: "Caillots Sanguins",
+                nav_exam: "Examen Clinique Complet",
                 nav_asl: "Source du Mal",
                 nav_archive: "Centre d'Archives",
                 btn_prev: "Précédent",
@@ -2014,7 +2334,7 @@
                 const step = item.getAttribute('data-step');
                 const icon = item.querySelector('i');
                 if (step) {
-                    const keys = ['', 'nav_basic', 'nav_blood', 'nav_humors', 'nav_tissue', 'nav_vital', 'nav_balance', 'nav_pulse', 'nav_time', 'nav_taste', 'nav_psycho', 'nav_asl'];
+                    const keys = ['', 'nav_basic', 'nav_blood', 'nav_humors', 'nav_tissue', 'nav_vital', 'nav_balance', 'nav_pulse', 'nav_time', 'nav_taste', 'nav_psycho', 'nav_digestive', 'nav_respiratory', 'nav_circulatory', 'nav_muscular', 'nav_thyroid', 'nav_women', 'nav_men', 'nav_endocrine', 'nav_prolactin', 'nav_clots', 'nav_exam', 'nav_asl'];
                     const textContent = t[keys[step]];
                     if (textContent) {
                         item.innerHTML = '';
